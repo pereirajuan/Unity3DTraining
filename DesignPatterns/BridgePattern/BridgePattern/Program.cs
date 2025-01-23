@@ -20,6 +20,11 @@ namespace BridgePattern
             dp.SetCourse(new MathAnalysis());
             dp.Select();
 
+            // Add new example using LinearAlgebra
+            dp = new Computer();
+            dp.SetCourse(new LinearAlgebra());
+            dp.Select();
+
             //桥接模式
             Abstraction abstraction = new RedefineAbstraction();
             abstraction.SetImplementor(new ConcreteImplementorA());

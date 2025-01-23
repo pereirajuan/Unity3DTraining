@@ -32,4 +32,13 @@ namespace BridgePattern
             Console.WriteLine("选择了高等数学");
         }
     }
+
+    // Add new math course type
+    class LinearAlgebra : Math 
+    {
+        public override void Select()
+        {
+            Console.WriteLine("选择了线性代数");
+        }
+    }
 }
